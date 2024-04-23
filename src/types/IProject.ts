@@ -73,6 +73,7 @@ export interface IProject {
   archivedUrl?: string;
   type: string;
   companyName?: string;
+  companyUrl?: string;
   thumbnail: string;
   summaryTitle: string;
   summary: string;
@@ -81,11 +82,12 @@ export interface IProject {
   technologies: ITechnology[];
   thumbnailLogo: string;
   featured: boolean;
+  repositoryName?: string;
   repositoryUrl?: string;
 }
 export interface ICompany {
   name: string;
-  url: string;
+  url?: string;
   logo: string;
 }
 export interface ISkillGroup {
